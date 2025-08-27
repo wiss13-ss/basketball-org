@@ -4,7 +4,7 @@ session_start();
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     require_once '../config/db.php';
-//hihi
+
     $username = trim($_POST['username']);
     $password = $_POST['password'];
 
@@ -50,3 +50,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 header('Location: ../views/login.php');
 
 exit(); 
+
