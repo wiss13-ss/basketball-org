@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
     $role = $_POST['role'];
-    //hello
+    //hello hiiiiiiiiiii
 
     // Basic validation
     if (empty($username) || empty($password) || empty($role)) {
@@ -40,4 +40,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 header('Location: ../views/register.php');
 
 exit(); 
+
 
