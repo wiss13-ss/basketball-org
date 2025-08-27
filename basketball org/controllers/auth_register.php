@@ -6,6 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = trim($_POST['username']);
     $password = $_POST['password'];
     $role = $_POST['role'];
+    //hello
 
     // Basic validation
     if (empty($username) || empty($password) || empty($role)) {
@@ -37,4 +38,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 // If not POST, redirect to registration form
 header('Location: ../views/register.php');
+
 exit(); 
